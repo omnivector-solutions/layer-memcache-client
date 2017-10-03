@@ -1,0 +1,5 @@
+includes:
+  - 'layer:basic'
+  - 'layer:nginx'
+  - 'interface:memcache'
+repo: 'https://github.com/jamesbeedy/layer-memcache-client'

@@ -1,0 +1,5 @@
+upstream es_cluster {
+  {% for memcache_host in memcache_servers %}
+    server {{ memcache_host.host }}:{{ memcache_host.port }};
+  {% endfor %}
+}

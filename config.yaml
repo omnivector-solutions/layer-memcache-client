@@ -1,0 +1,6 @@
+options:
+  memcache-hosts:
+    type: string
+    default: ""
+    description: |
+        Manually specify memcache hosts as comma deleniated string

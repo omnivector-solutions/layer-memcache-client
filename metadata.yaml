@@ -1,0 +1,20 @@
+name: memcache-client
+summary: Memcache client layer
+maintainer: James Beedy <jamesbeedy@gmail.com>
+description: |
+  This layer provides the reactive client layer for memcache.
+  NGINX is used to create loadbalancing proxy to the memcache cluster. When new
+  memcache members are added to the cluster, this charm will re-render the memcache
+  lb-proxy config with the current hosts in the cluster and reload NGINX.
+
+  This means you can point your application config at "http://127.0.0.1:11211" and this layer will
+  do the rest.
+tags:
+  - memcache
+  - django
+  - flask
+  - rails
+  - client
+requires:
+  memcache:
+    memcache: memcache
