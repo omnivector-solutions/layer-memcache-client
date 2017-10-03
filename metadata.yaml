@@ -17,4 +17,4 @@ tags:
   - client
 requires:
   memcache:
-    memcache: memcache
+    interface: memcache

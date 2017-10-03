@@ -79,7 +79,7 @@ def render_memcache_lb_proxy():
     set_state('memcache.client.available')
 
 
-@when('memcache.client.available')
+@when('memcache.client.available',
       'config.changed.memcache-hosts')
 def modify_memcache_state():
     remove_state('manual.memcache.check.available')
